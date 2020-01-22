@@ -1,0 +1,19 @@
+{
+  "name": "gears-shop",
+  "version": "1.0.0",
+  "description": "\"# gears-shop\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codecell/gears-shop.git"
+  },
+  "author": "Ezaka Alfred N. (codecell)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codecell/gears-shop/issues"
+  },
+  "homepage": "https://github.com/codecell/gears-shop#readme"
+}
