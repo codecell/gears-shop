@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/codecell/gears-shop/issues"
   },
-  "homepage": "https://github.com/codecell/gears-shop#readme"
+  "homepage": "https://github.com/codecell/gears-shop#readme",
+  "devDependencies": {
+    "stylelint": "^13.0.0",
+    "stylelint-config-recommended": "^3.0.0"
+  }
 }
