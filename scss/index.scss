@@ -1,6 +1,7 @@
 @import './utils';
 @import './navbar';
 @import './-main-sections.scss';
+@import './customer-testims';
 
 // <<<< BASIC RESETS >>>>>
 * {
@@ -9,11 +10,22 @@
   box-sizing: border-box;
 }
 
-.container {
-  margin-left: 0;
-  padding-left: 0;
-}
-
 body {
   max-width: 1310px;
 }
+
+.container-fluid {
+  margin-left: 0;
+  padding-left: 0;
+  margin-right:  0;
+  padding-right: 0;
+  max-width: 1310px;
+}
+
+div.fixation-clearer {
+  width: 100%;
+  padding: 3em;
+  background-color: $custgreen-bg-color;
+  margin: 0 20px !important;
+}
+

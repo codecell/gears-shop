@@ -23,7 +23,7 @@
   </script>
 </head>
 <body>
-  <header class="container">
+  <header class="container-fluid">
     <nav class="navbar navbar-expand-lg d-flex justify-content-between">      
         <div class="d-flex ml-4">
           <a class="navbar-brand text-light" href="#">
@@ -41,7 +41,7 @@
               <a class="nav-link" href="#">Latest Deals</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Customer Care</a>
+              <a class="nav-link" href="#" id="customerCareLink">Customer Care</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -82,25 +82,26 @@
     </nav>
   </header>
 
-  <main>
+  <div class="fixation-clearer"></div>
+  <main class="container-fluid">
     <section class="homepage">
-      <div class="home-bg-img-holder">
-        <div class="app-slogan">
+      <div class="home-bg-img-holder row">
+        <div class="app-slogan col-sm-12 col-md-5 col-lg-5">
           <p>THE ELITE GEARS STORE</p>
           <p>100% money back guarantee</p>
           
           <button class="btn-latest-deals">Latest deals</button>
 
-          <p>+234-654-864-545</p>
+          <p class="text-nowrap" id="customerCareLine">+234-654-864-545</p>
         </div>
 
-        <img class="home-bg-img" src="../images/gadget-img.jpg" alt="home image">
+        <img class="home-bg-img col-sm-12 col-md-7 col-lg-7 mt-3 img-fluid row-fluid" src="./images/r-img.jpg" alt="home image">
 
       </div>
     </section>
 
     <section class="home-carousel">
-      <div class="home-carousel-main">
+      <div class="home-carousel-main pb-3">
         <div class="carousel-header">
           <h3>Hottest Deals</h3>
           <p><span class="custom-directions">< ></span></p>
@@ -139,11 +140,47 @@
       </div>  
     </section>
 
-    <section class="customer-testimonials">
-      <header>
+    <section class="customer-testimonials pt-2">
+      <header class="d-flex justify-content-between">
         <h3>CUSTOMER TESTIMONIALS</h3>
-        <div class="customer-cards-container"></div>
+        <p><span class="custom-directions">< ></span></p>
       </header>
+
+      <div class="customer-cards-container d-md-flex d-lg-flex">
+        <div class="testim-card col-sm-12 col-md-6 col-lg-6">
+          <div class="d-flex">
+            <img class="rounded-circle customer-img mr-3" src="./images/r-img.jpg" alt="R-img">
+            <div class="customer-details">
+              <h5 class="font-weight-bold">person</h5>
+              <p>lorem ipsum sit amet amet sit muspi</p>
+              <p><i class="testimonials-icon fa fa-facebook">facebook</i> <i class="testimonials-icon fa fa-twitter">twitter</i></p>
+            </div>
+          </div>
+          <div class="">
+            <p>Lorem ipsum dolor, provident nihil accusamus aut illo quae, 
+              ad assumenda Neque rem dolorem minus quod. Delectus dicta similique consequuntur 
+              inventore.
+            </p>
+          </div>
+        </div>
+
+        <div class="testim-card col-sm-12 col-md-6 col-lg-6">
+          <div class="d-flex">
+            <img class="rounded-circle customer-img mr-4 img-fluid" src="./images/r-img.jpg" alt="R-img">
+            <div class="customer-details">
+              <h5 class="font-weight-bold">person</h5>
+              <p>lorem ipsum sit amet amet sit muspi</p>
+              <p><i class="testimonials-icon fa fa-facebook">facebook</i> <i class="testimonials-icon fa fa-twitter">twitter</i></p>
+            </div>
+          </div>
+          <div class="">
+            <p>Lorem ipsum dolor, provident nihil accusamus aut illo quae, 
+              ad assumenda Neque rem dolorem minus quod. Delectus dicta similique consequuntur 
+              inventore.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
   
@@ -159,5 +196,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
   </script>
+
+  <script src="./app.js"></script>
 </body>
 </html>

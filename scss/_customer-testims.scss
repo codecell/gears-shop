@@ -1,0 +1,57 @@
+@import './utils';
+
+section.customer-testimonials {
+  background-color: $custgreen-bg-color;
+  min-height: 350px;
+  padding-bottom: 2em;
+  padding-top: 2em;
+  width: 100%;
+  margin: 0 20px !important;
+
+  header {
+    width: 65%;
+    margin: 0 auto;
+    color: #fff;
+
+    h3, p {
+      margin: 20px auto;
+    }
+
+    p {
+      font-size: 25px;
+    }
+  }
+}
+
+.customer-cards-container {
+  width: 68%;
+  margin: 0 auto;
+
+  .testim-card {
+    background-color: #fff;
+    min-height: 60px;
+    min-width: 45%;
+    border-radius: 3px;
+    padding: 1em;
+    border: 1px solid lightgrey;
+
+    .testimonials-icon {
+      color: $custgreen-bg-color;
+    }
+  }
+
+  .testim-card:first-child {
+    margin-right: 1em;
+  }
+}
+
+.customer-img {
+  height: 65px;
+  width: 65px;
+}
+
+@media screen and (min-width: 1024px) {
+  section.customer-testimonials {
+    
+  }
+}
