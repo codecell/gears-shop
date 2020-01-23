@@ -18,7 +18,8 @@ main {
   width: 80%;
   height: 170px !important;
   background-repeat: no-repeat;
-  background-size: contain; }
+  background-size: contain;
+  margin: 0 auto; }
 
 .home-bg-img-holder .app-slogan {
   min-width: 25%;
