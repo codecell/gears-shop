@@ -1,0 +1,154 @@
+@import './utils';
+
+main {
+  z-index: -1;
+  padding-right: 0;
+  width: 100%;
+
+  section.homepage {
+    position: relative;
+    width: 100%;
+    background-color: $custgreen-bg-color;
+    height: 580px;
+    margin-left: 20px;
+  }
+}
+
+.home-bg-img-holder {
+  display: flex;
+
+  .home-bg-img {
+    width: 60%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 50px;
+    top: 150px; 
+    color: $custgreen-bg-color;
+  }
+
+  .app-slogan {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    min-width: 25%;
+    color: #fff;
+
+    p:first-child {
+      font-size: 25px;
+      margin-bottom: 0;
+      font-weight: 500;
+    }
+
+    .btn-latest-deals {
+      width: 200px;
+      height: 35px;
+      color: #fff;
+      background-color: $cust-wine;
+      border: 2px solid rgba(204, 12, 89, 0.863);
+      border-radius: 20px;
+      font-size: 17px;
+      margin-bottom: 100px;
+
+      &:hover {
+        background-color: rgba(204, 12, 89, 0.863);
+        transition: background-color 0.4s;
+      }
+    }
+  }
+}
+
+// <<< HOME CAROUSEL SECTION >>>>
+section.home-carousel {
+  background-color: $custgreen-bg-color;
+  min-height: 450px;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.home-carousel-main {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+
+  .carousel-header {
+    display: flex;
+    justify-content: space-between;
+    
+    h3, p {
+      color: #555;
+      margin: 25px auto;
+    }
+
+    .custom-directions {
+      color: grey;
+      font-size: 20px;
+    }
+  }
+
+  .carousel-imgs-main {
+    display: flex;
+    margin-left: 4em;
+    margin-right: 4em;
+
+    .large-img, .smaller-imgs-main {
+      width: 45%;
+      height: 320px;
+      background-color: #efefef;
+      border: 1px solid lightgrey;
+      border-radius: 3px;
+      padding: 1em;
+      margin: 2em auto;
+
+      .large-img-details {
+        display: flex;
+        justify-content: space-between;
+
+        .large-img-offer {
+          border-radius: 50%;
+          background-color: $custgreen-bg-color;
+          height: 55px;
+          min-width: 52px;
+          color: #fff;
+        }
+      }
+    }
+
+    .smaller-imgs-main {
+      padding: 0 !important;
+      border: none;
+      background-color: #fff;
+
+      .smaller-img {
+        position: relative;
+        background-color: #efefef;
+        height: 150px;
+        padding: 1em;
+        width: 100%;
+        border: 1px solid lightgrey;
+        border-radius: 3px;
+
+
+        .smaller-img-details {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          min-height: 40px;
+          min-width: 30px;
+
+          p:first-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      .smaller-img:first-child {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+
+
+}

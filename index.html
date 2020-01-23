@@ -23,6 +23,129 @@
   </script>
 </head>
 <body>
+  <header class="container">
+    <nav class="navbar navbar-expand-lg d-flex justify-content-between">      
+        <div class="d-flex ml-4">
+          <a class="navbar-brand text-light" href="#">
+            <i class="fa fa-anchor"></i>
+            <span class="ml-2 d-none d-lg-inline">Gearz shop</span>
+          </a>
+        </div>      
+
+        <div class="d-lg-flex collapse nav-routes" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Latest Deals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Customer Care</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Categories
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Men's Shoes</a>
+                <a class="dropdown-item" href="#">Men's clothes</a>
+                <a class="dropdown-item" href="#">Women's Shoes</a>
+                <a class="dropdown-item" href="#">Women's clothes</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="d-flex cart-div-notif-container">
+          <span class="rounded-circle nav-heart-circle border flex-nucleus">
+            <i class="fa fa-heart text-light"></i>
+          </span>
+          <div class="cart-div ml-3">
+            <span class="nav-cart-circle rounded-circle flex-nucleus">
+              <i class="fa fa-shopping-cart text-light"></i> 
+            </span>
+
+            <span class="cart-notification rounded-circle border flex-nucleus">
+              <small>9</small>
+            </span>
+          </div>
+        </div>
+
+        <button class="navbar-toggler text-light d-sm-flex d-md-flex d-lg-none outline-0"
+          type="button" data-toggle="collapse" 
+          data-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent" 
+          aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="homepage">
+      <div class="home-bg-img-holder">
+        <div class="app-slogan">
+          <p>THE ELITE GEARS STORE</p>
+          <p>100% money back guarantee</p>
+          
+          <button class="btn-latest-deals">Latest deals</button>
+
+          <p>+234-654-864-545</p>
+        </div>
+
+        <img class="home-bg-img" src="../images/gadget-img.jpg" alt="home image">
+
+      </div>
+    </section>
+
+    <section class="home-carousel">
+      <div class="home-carousel-main">
+        <div class="carousel-header">
+          <h3>Hottest Deals</h3>
+          <p><span class="custom-directions">< ></span></p>
+        </div>
+
+        <div class="carousel-imgs-main">
+          <div class="large-img">
+            <div class="large-img-details">
+              <div>
+                <h5>gear title</h5>
+                <p>8990 £ <span><i class="fa fa-shopping-cart"></i></span></p>
+              </div>
+
+              <p class="rounded-circle large-img-offer flex-nucleus">-50%</p>
+            </div>
+          </div>
+
+          <div class="smaller-imgs-main">
+
+            <div class="smaller-img">
+              <div class="smaller-img-details">
+                <p class="font-weight-bold">gear title</p>
+                <p>1979 £<span><i class="fa fa-shopping-cart"></i></span></p>
+              </div>
+            </div>
+
+            <div class="smaller-img">
+              <div class="smaller-img-details">
+                <p class="font-weight-bold">gear title</p>
+                <p>1879 £<span><i class="fa fa-shopping-cart"></i></span></p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>  
+    </section>
+
+    <section class="customer-testimonials">
+      <header>
+        <h3>CUSTOMER TESTIMONIALS</h3>
+        <div class="customer-cards-container"></div>
+      </header>
+    </section>
+  </main>
   
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 

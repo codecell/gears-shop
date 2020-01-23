@@ -1,0 +1,61 @@
+// <<< NAVABR >>>>
+.navbar {
+  background-color: $custgreen-bg-color;
+  padding: 0;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+
+  .navbar-brand {
+    padding: 0.83rem;
+  }
+
+  .nav-link {
+    color: #fff;
+    height: 80px;
+    padding: 1.55rem;
+
+    &:hover {
+      background-color: $hover-bg;
+      margin-top: 0 !important;
+      transition: background-color 0.4s;;
+    }
+  }
+}
+
+.nav-heart-circle {
+  min-width: 30px;
+  max-height: 30px;
+  background-color: #b4b4b4;
+  padding: 1rem;
+
+  i {
+    font-size: 14px;
+    color: #fff;
+  }
+}
+
+.cart-div {
+  position: relative;
+
+  .nav-cart-circle {
+    background-color: $cust-wine;
+    min-width: 35px;
+    min-height: 35px;
+  }
+
+  .cart-notification {
+    background-color: #fff;
+    position: absolute;
+    min-width: 20px;
+    max-height: 20px;
+    left: 0px;
+    top: 26px;
+  }
+}
+
+.cart-div-notif-container {
+  margin-right: 60px;
+}

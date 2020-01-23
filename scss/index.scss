@@ -1,0 +1,19 @@
+@import './utils';
+@import './navbar';
+@import './-main-sections.scss';
+
+// <<<< BASIC RESETS >>>>>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+body {
+  max-width: 1310px;
+}
