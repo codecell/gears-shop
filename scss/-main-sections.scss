@@ -68,7 +68,7 @@ section.home-carousel {
 .custom-badge {
   background-color: $cust-wine;
   width: 140px;
-  border-radius: 6px;
+  border-radius: 14px;
 }
 
 .home-carousel-main {
@@ -162,7 +162,6 @@ section.home-carousel {
   }
 
   .home-bg-img {
-    // margin-top: 50px !important;
     min-height: 400px !important;
   }
 
@@ -252,9 +251,4 @@ section.home-carousel {
     height: 400px !important;
   }
 
-  // carouael section
-
-  section.home-carousel {
-    // padding-top: 4em !important;
-  }
 }

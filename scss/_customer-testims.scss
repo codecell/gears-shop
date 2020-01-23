@@ -50,8 +50,14 @@ section.customer-testimonials {
   width: 65px;
 }
 
+@media screen and (min-width: 668px) {
+  .testim-card:last-child {
+    margin-top: 0 !important;
+  }
+}
+
 @media screen and (min-width: 1024px) {
-  section.customer-testimonials {
-    
+  .testim-card:last-child {
+    margin-top: 0 !important;
   }
 }

@@ -103,7 +103,7 @@ section.home-carousel {
 .custom-badge {
   background-color: #D8055A;
   width: 140px;
-  border-radius: 6px; }
+  border-radius: 14px; }
 
 .home-carousel-main {
   width: 80%;
@@ -257,6 +257,53 @@ section.customer-testimonials {
 .customer-img {
   height: 65px;
   width: 65px; }
+
+@media screen and (min-width: 668px) {
+  .testim-card:last-child {
+    margin-top: 0 !important; } }
+
+@media screen and (min-width: 1024px) {
+  .testim-card:last-child {
+    margin-top: 0 !important; } }
+
+.flex-nucleus {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+footer {
+  background-color: rgba(81, 175, 5, 0.911);
+  width: 100%;
+  min-height: 120px !important;
+  margin: 0 20px !important;
+  padding-top: 1em;
+  padding-bottom: 0.5em; }
+  footer ul {
+    text-align: center; }
+  footer a {
+    color: #fff; }
+    footer a:hover {
+      color: #555;
+      transition: color 0.5s; }
+
+li {
+  list-style: none; }
+
+.footer-icons-span {
+  height: 35px;
+  min-width: 30px;
+  background-color: #555;
+  color: #fff; }
+
+.footer-copyright {
+  text-align: center; }
+
+@media screen and (min-width: 1024px) {
+  .footer-socials-main {
+    justify-content: flex-end;
+    margin-right: 40px; }
+  footer ul {
+    justify-content: flex-start !important; } }
 
 * {
   margin: 0;
