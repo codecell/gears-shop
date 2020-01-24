@@ -13,6 +13,21 @@ main {
   }
 } 
 
+.carousel-header {
+  display: flex;
+  justify-content: space-between;
+  
+  h3, p {
+    color: #555;
+    margin: 25px auto;
+  }
+
+  .custom-directions {
+    color: grey;
+    font-size: 20px;
+  }
+} 
+
 .home-bg-img-holder {
   background-image: url('../images/watch-home.jpg');
   width: 80%;
@@ -73,22 +88,7 @@ section.home-carousel {
 .home-carousel-main {
   width: 80%;
   margin: 0 auto;
-  background-color: #fff;
-
-  .carousel-header {
-    display: flex;
-    justify-content: space-between;
-    
-    h3, p {
-      color: #555;
-      margin: 25px auto;
-    }
-
-    .custom-directions {
-      color: grey;
-      font-size: 20px;
-    }
-  }  
+  background-color: #fff; 
 
   .large-img, .smaller-img{
     width: 70%;
