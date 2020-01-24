@@ -13,6 +13,16 @@ main {
     height: 580px;
     margin: 0 20px !important; }
 
+.carousel-header {
+  display: flex;
+  justify-content: space-between; }
+  .carousel-header h3, .carousel-header p {
+    color: #555;
+    margin: 25px auto; }
+  .carousel-header .custom-directions {
+    color: grey;
+    font-size: 20px; }
+
 .home-bg-img-holder {
   background-image: url("../images/watch-home.jpg");
   width: 80%;
@@ -59,15 +69,6 @@ section.home-carousel {
   width: 80%;
   margin: 0 auto;
   background-color: #fff; }
-  .home-carousel-main .carousel-header {
-    display: flex;
-    justify-content: space-between; }
-    .home-carousel-main .carousel-header h3, .home-carousel-main .carousel-header p {
-      color: #555;
-      margin: 25px auto; }
-    .home-carousel-main .carousel-header .custom-directions {
-      color: grey;
-      font-size: 20px; }
   .home-carousel-main .large-img, .home-carousel-main .smaller-img {
     width: 70%;
     height: 220px;
