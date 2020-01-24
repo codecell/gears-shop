@@ -15,7 +15,8 @@ div.fixation-clearer {
 
 aside {
   background-color: #efefef;
-  max-height: 600px;
+  min-height: 500px;
+  min-width: 200px;
   border-radius: 6px;
 
   .range-sign {
@@ -51,19 +52,19 @@ aside {
 }
 
 .filter-by-color-li {
-  min-width: 15px;
+  width: 20px;
   height: 20px;
 }
 
 .btn-latest-deals {
-  width: 200px;
+  min-width: 100px;
   height: 35px;
   color: #fff;
   background-color: $cust-wine;
   border: 2px solid rgba(204, 12, 89, 0.863);
   border-radius: 20px;
   font-size: 17px;
-  margin-bottom: 100px;
+  margin-left: 25%;
 
   &:hover {
     background-color: rgba(204, 12, 89, 0.863);
@@ -72,14 +73,16 @@ aside {
 }
 
 .wares-container {
-  max-height: 600px;
+  min-height: 500px;
+  margin: 0 auto;
 
   .ware-unit {
     height: 290px;
     max-width: 240px;
     background-color: #efefef;
     border-radius: 6px;
-    margin-right: 20px;
+    margin-left: 25px;
+    margin-bottom: 20px;
   }
 }
 
@@ -110,4 +113,17 @@ aside {
   button:first-child {
     border: 1px solid $custgreen-bg-color;
   }
+}
+
+@media screen and (min-width: 1024px) {
+  aside {
+    // max-width: 250px;
+    margin-left: 0 !important;
+    margin-right: 20px !important;
+  }
+
+  .wares-container {
+    min-height: 100px;
+  }
+
 }

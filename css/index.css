@@ -328,7 +328,8 @@ div.fixation-clearer {
 
 aside {
   background-color: #efefef;
-  max-height: 600px;
+  min-height: 500px;
+  min-width: 200px;
   border-radius: 6px; }
   aside .range-sign {
     display: flex;
@@ -354,30 +355,32 @@ aside {
     outline: none; }
 
 .filter-by-color-li {
-  min-width: 15px;
+  width: 20px;
   height: 20px; }
 
 .btn-latest-deals {
-  width: 200px;
+  min-width: 100px;
   height: 35px;
   color: #fff;
   background-color: #D8055A;
   border: 2px solid rgba(204, 12, 89, 0.863);
   border-radius: 20px;
   font-size: 17px;
-  margin-bottom: 100px; }
+  margin-left: 25%; }
   .btn-latest-deals:hover {
     background-color: rgba(204, 12, 89, 0.863);
     transition: background-color 0.4s; }
 
 .wares-container {
-  max-height: 600px; }
+  min-height: 500px;
+  margin: 0 auto; }
   .wares-container .ware-unit {
     height: 290px;
     max-width: 240px;
     background-color: #efefef;
     border-radius: 6px;
-    margin-right: 20px; }
+    margin-left: 25px;
+    margin-bottom: 20px; }
 
 .ware-img {
   background: url("../images/r-img.jpg");
@@ -398,6 +401,13 @@ aside {
 
 .ware-buttons-div button:first-child {
   border: 1px solid #62C312; }
+
+@media screen and (min-width: 1024px) {
+  aside {
+    margin-left: 0 !important;
+    margin-right: 20px !important; }
+  .wares-container {
+    min-height: 100px; } }
 
 * {
   margin: 0;
