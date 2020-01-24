@@ -27,8 +27,8 @@
 }
 
 .nav-heart-circle {
-  min-width: 30px;
-  max-height: 30px;
+  width: 30px;
+  height: 30px;
   background-color: #b4b4b4;
   padding: 1rem;
 
@@ -43,8 +43,8 @@
 
   .nav-cart-circle {
     background-color: $cust-wine;
-    min-width: 35px;
-    min-height: 35px;
+    width: 37px;
+    height: 37px;
   }
 
   .cart-notification {

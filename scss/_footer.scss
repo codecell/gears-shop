@@ -27,8 +27,8 @@ li {
 }
 
 .footer-icons-span {
-  height: 35px;
-  min-width: 30px;
+  height: 41px;
+  width: 41px;
   background-color: #555;
   color: #fff;
 }
@@ -41,7 +41,7 @@ li {
 // <<<< FOOTER MEDIA QUERIRES
 @media screen and (min-width: 1024px) {
   .footer-socials-main {
-    justify-content: flex-end;
+    justify-content: flex-end !important;
     margin-right: 40px;
   }
 

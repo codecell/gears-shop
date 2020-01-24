@@ -1,0 +1,113 @@
+@import './utils';
+
+section.latest-deals-section {
+  background-color: $custgreen-bg-color;
+  min-height: 60px;
+  width: 100%;
+  padding-top: 1em;
+  margin: 0 20px !important;
+}
+
+div.fixation-clearer {
+  padding-right: 0;
+  background-color: #fff !important;
+}
+
+aside {
+  background-color: #efefef;
+  max-height: 600px;
+  border-radius: 6px;
+
+  .range-sign {
+    display: flex;
+    width: 80%;
+    min-height: 3px;
+    margin: 0 auto;
+    
+    .grey-line {
+      width: 35px;
+      height: 4px;
+      background-color: lightgrey;
+    }
+
+    .green-line {
+      width: 50px;
+      height: 4px;
+      background-color: $custgreen-bg-color;
+    }
+  }
+}
+
+.range-button {
+  width: 50px;
+  height: 35px;
+  background-color: #fff;
+  border: 1px solid $custgreen-bg-color;
+  border-radius: 3px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.filter-by-color-li {
+  min-width: 15px;
+  height: 20px;
+}
+
+.btn-latest-deals {
+  width: 200px;
+  height: 35px;
+  color: #fff;
+  background-color: $cust-wine;
+  border: 2px solid rgba(204, 12, 89, 0.863);
+  border-radius: 20px;
+  font-size: 17px;
+  margin-bottom: 100px;
+
+  &:hover {
+    background-color: rgba(204, 12, 89, 0.863);
+    transition: background-color 0.4s;
+  }
+}
+
+.wares-container {
+  max-height: 600px;
+
+  .ware-unit {
+    height: 290px;
+    max-width: 240px;
+    background-color: #efefef;
+    border-radius: 6px;
+    margin-right: 20px;
+  }
+}
+
+
+.ware-img {
+  background: url('../images/r-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  width: 100%;
+  position: relative;
+
+  .heart-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: $cust-wine;
+  }
+}
+
+.ware-buttons-div {
+
+  button {
+    min-width: 55px;
+    border-radius: 15px;
+  }
+
+  button:first-child {
+    border: 1px solid $custgreen-bg-color;
+  }
+}

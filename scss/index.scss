@@ -3,6 +3,7 @@
 @import './-main-sections.scss';
 @import './customer-testims';
 @import './footer';
+@import './latest-deals';
 
 // <<<< BASIC RESETS >>>>>
 * {
@@ -15,7 +16,7 @@ body {
   max-width: 1310px;
 }
 
-.container-fluid {
+.container-fluid, .row {
   margin-left: 0;
   padding-left: 0;
   margin-right:  0;

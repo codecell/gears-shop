@@ -83,7 +83,7 @@ section.home-carousel {
         border-radius: 50%;
         background-color: #62C312;
         height: 55px;
-        min-width: 52px;
+        width: 55px;
         color: #fff; }
   .home-carousel-main .carousel-imgs-main .smaller-img {
     position: relative; }
@@ -97,6 +97,10 @@ section.home-carousel {
         margin-bottom: 0; }
   .home-carousel-main .carousel-imgs-main .smaller-img:first-child {
     margin-bottom: 20px; }
+
+.shopping-cart-custom {
+  color: #D8055A;
+  font-size: 21px; }
 
 @media screen and (min-width: 1024px) {
   .app-slogan {

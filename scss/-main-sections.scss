@@ -110,7 +110,7 @@ section.home-carousel {
           border-radius: 50%;
           background-color: $custgreen-bg-color;
           height: 55px;
-          min-width: 52px;
+          width: 55px;
           color: #fff;
         }
       }
@@ -139,6 +139,11 @@ section.home-carousel {
       }
     // }
   }
+}
+
+.shopping-cart-custom {
+  color: $cust-wine;
+  font-size: 21px;
 }
 
 // <<< media queries >>>
