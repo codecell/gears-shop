@@ -61,37 +61,37 @@ main {
     width: 100%;
     background-color: #62C312;
     height: 580px;
-    margin: 0 auto;
     margin: 0 20px !important; }
 
-.home-bg-img-holder .home-bg-img {
+.home-bg-img-holder {
+  background-image: url("../images/watch-home.jpg");
   width: 80%;
-  height: 170px !important;
+  min-height: 170px !important;
   background-repeat: no-repeat;
-  background-size: contain;
-  margin: 0 auto; }
-
-.home-bg-img-holder .app-slogan {
-  min-width: 25%;
-  color: #fff; }
-  .home-bg-img-holder .app-slogan p, .home-bg-img-holder .app-slogan button {
-    margin-left: 50px; }
-  .home-bg-img-holder .app-slogan p:first-child {
-    font-size: 25px;
-    margin: 50px auto 0 50px;
-    font-weight: 500; }
-  .home-bg-img-holder .app-slogan .btn-latest-deals {
-    width: 200px;
-    height: 35px;
-    color: #fff;
-    background-color: #D8055A;
-    border: 2px solid rgba(204, 12, 89, 0.863);
-    border-radius: 20px;
-    font-size: 17px;
-    margin-bottom: 100px; }
-    .home-bg-img-holder .app-slogan .btn-latest-deals:hover {
-      background-color: rgba(204, 12, 89, 0.863);
-      transition: background-color 0.4s; }
+  background-size: cover;
+  margin: 0 auto;
+  background-position: 590px, -100px; }
+  .home-bg-img-holder .app-slogan {
+    min-width: 25%;
+    color: #fff; }
+    .home-bg-img-holder .app-slogan p, .home-bg-img-holder .app-slogan button {
+      margin-left: 50px; }
+    .home-bg-img-holder .app-slogan p:first-child {
+      font-size: 25px;
+      margin: 50px auto 0 50px;
+      font-weight: 500; }
+    .home-bg-img-holder .app-slogan .btn-latest-deals {
+      width: 200px;
+      height: 35px;
+      color: #fff;
+      background-color: #D8055A;
+      border: 2px solid rgba(204, 12, 89, 0.863);
+      border-radius: 20px;
+      font-size: 17px;
+      margin-bottom: 100px; }
+      .home-bg-img-holder .app-slogan .btn-latest-deals:hover {
+        background-color: rgba(204, 12, 89, 0.863);
+        transition: background-color 0.4s; }
 
 section.home-carousel {
   padding-top: 3em;
@@ -118,34 +118,37 @@ section.home-carousel {
     .home-carousel-main .carousel-header .custom-directions {
       color: grey;
       font-size: 20px; }
-  .home-carousel-main .carousel-imgs-main .large-img, .home-carousel-main .carousel-imgs-main .smaller-img {
+  .home-carousel-main .large-img, .home-carousel-main .smaller-img {
     width: 70%;
     height: 220px;
-    background-color: #efefef;
+    background-image: url("../images/watch.jpg") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
     border: 1px solid lightgrey;
     border-radius: 3px;
     padding: 1em;
-    margin: 2em auto; }
-    .home-carousel-main .carousel-imgs-main .large-img .large-img-details, .home-carousel-main .carousel-imgs-main .smaller-img .large-img-details {
+    margin: 2em auto;
+    background-position: 0px, -100px; }
+    .home-carousel-main .large-img .large-img-details, .home-carousel-main .smaller-img .large-img-details {
       display: flex;
       justify-content: space-between; }
-      .home-carousel-main .carousel-imgs-main .large-img .large-img-details .large-img-offer, .home-carousel-main .carousel-imgs-main .smaller-img .large-img-details .large-img-offer {
+      .home-carousel-main .large-img .large-img-details .large-img-offer, .home-carousel-main .smaller-img .large-img-details .large-img-offer {
         border-radius: 50%;
         background-color: #62C312;
         height: 55px;
         width: 55px;
         color: #fff; }
-  .home-carousel-main .carousel-imgs-main .smaller-img {
+  .home-carousel-main .smaller-img {
     position: relative; }
-    .home-carousel-main .carousel-imgs-main .smaller-img .smaller-img-details {
+    .home-carousel-main .smaller-img .smaller-img-details {
       position: absolute;
       top: 10px;
       left: 10px;
       min-height: 40px;
       min-width: 30px; }
-      .home-carousel-main .carousel-imgs-main .smaller-img .smaller-img-details p:first-child {
+      .home-carousel-main .smaller-img .smaller-img-details p:first-child {
         margin-bottom: 0; }
-  .home-carousel-main .carousel-imgs-main .smaller-img:first-child {
+  .home-carousel-main .smaller-img:first-child {
     margin-bottom: 20px; }
 
 .shopping-cart-custom {
@@ -288,7 +291,7 @@ footer {
   footer a {
     color: #fff; }
     footer a:hover {
-      color: #555;
+      color: #000;
       transition: color 0.5s; }
 
 li {
@@ -358,8 +361,11 @@ aside {
   width: 20px;
   height: 20px; }
 
+.fa-check {
+  font-size: 12px !important; }
+
 .btn-latest-deals {
-  min-width: 100px;
+  min-width: 125px;
   height: 35px;
   color: #fff;
   background-color: #D8055A;
@@ -383,7 +389,7 @@ aside {
     margin-bottom: 20px; }
 
 .ware-img {
-  background: url("../images/r-img.jpg");
+  background: url("../images/watch-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 150px;
@@ -408,6 +414,128 @@ aside {
     margin-right: 20px !important; }
   .wares-container {
     min-height: 100px; } }
+
+.flex-nucleus {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+div.fixation-clearer {
+  padding-right: 0;
+  background-color: #62C312 !important; }
+
+main.product-bg {
+  background-color: #62C312;
+  min-height: 60px;
+  width: 100%;
+  padding-top: 1em;
+  margin: 0 20px !important; }
+
+.prduct-canvass {
+  background-color: #fff;
+  width: 80%;
+  min-height: 500px;
+  margin: 0 auto;
+  border-radius: 6px; }
+
+.main-product-section {
+  min-width: 90%;
+  min-height: 400px;
+  margin: 0 auto;
+  display: grid;
+  grid-auto-flow: row;
+  grid-auto-rows: 1fr 1fr;
+  border-radius: 6px; }
+
+.product-img-div {
+  background: url("../images/watch.jpg");
+  min-width: 60px;
+  min-height: 60px;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  background-position: 0, -400px; }
+  .product-img-div .pic-selector {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    color: grey; }
+  .product-img-div .product-id {
+    color: #524f4f;
+    position: absolute;
+    bottom: 15px;
+    right: 15px; }
+  .product-img-div .vert-info-1, .product-img-div .vert-info-2,
+  .product-img-div .vert-info-3 {
+    height: 9px;
+    width: 9px; }
+  .product-img-div .vert-info-1 {
+    background-color: #346908; }
+  .product-img-div .vert-info-2 {
+    background-color: #62C312; }
+  .product-img-div .vert-info-3 {
+    background-color: #72ec0e; }
+  .product-img-div .img-offer {
+    height: 50px;
+    width: 50px;
+    background-color: #62C312; }
+
+.product-color-1, .product-color-2,
+.product-color-3, .product-color-4,
+.product-color-5 {
+  height: 20px;
+  width: 20px; }
+
+.product-color-1 {
+  background-color: tomato; }
+
+.product-color-2 {
+  background-color: #e47865; }
+
+.product-color-3 {
+  background-color: #c0c0c0; }
+
+.product-color-4 {
+  background-color: #681607; }
+
+.heart-icon-2 {
+  color: #D8055A; }
+
+.product-pcs-btn-div button {
+  width: 55px;
+  border-radius: 12px; }
+  .product-pcs-btn-div button:first-child {
+    border: 1px solid #62C312; }
+
+.old-price {
+  color: grey;
+  text-decoration: line-through; }
+
+.btn-add-cart {
+  width: 200px;
+  height: 35px;
+  color: #fff;
+  background-color: #D8055A;
+  border: 2px solid rgba(204, 12, 89, 0.863);
+  border-radius: 20px;
+  font-size: 17px;
+  margin-bottom: 100px; }
+  .btn-add-cart:hover {
+    background-color: rgba(204, 12, 89, 0.863);
+    transition: background-color 0.4s; }
+
+.related-deals {
+  width: 80%;
+  margin: 0 auto; }
+
+@media screen and (min-width: 1024px) {
+  .main-product-section {
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr; } }
 
 * {
   margin: 0;

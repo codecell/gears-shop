@@ -56,8 +56,12 @@ aside {
   height: 20px;
 }
 
+.fa-check {
+  font-size: 12px !important;
+}
+
 .btn-latest-deals {
-  min-width: 100px;
+  min-width: 125px;
   height: 35px;
   color: #fff;
   background-color: $cust-wine;
@@ -88,7 +92,7 @@ aside {
 
 
 .ware-img {
-  background: url('../images/r-img.jpg');
+  background: url('../images/watch-2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 150px;

@@ -9,20 +9,19 @@ main {
     width: 100%;
     background-color: $custgreen-bg-color;
     height: 580px;
-    margin: 0 auto;
     margin: 0 20px !important;
   }
-}
+} 
 
 .home-bg-img-holder {
-    
-  .home-bg-img {
-    width: 80%;
-    height: 170px !important;
-    background-repeat: no-repeat;
-    background-size: contain; 
-    margin: 0 auto;
-  }
+  background-image: url('../images/watch-home.jpg');
+  width: 80%;
+  min-height: 170px !important;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  margin: 0 auto;
+  background-position: 590px, -100px;
+  
 
   .app-slogan {
     min-width: 25%;
@@ -89,57 +88,56 @@ section.home-carousel {
       color: grey;
       font-size: 20px;
     }
-  }
+  }  
 
-  .carousel-imgs-main {
+  .large-img, .smaller-img{
+    width: 70%;
+    height: 220px;
+    background-image: url('../images/watch.jpg') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    padding: 1em;
+    margin: 2em auto;
+    background-position: 0px, -100px;
 
-    .large-img, .smaller-img{
-      width: 70%;
-      height: 220px;
-      background-color: #efefef;
-      border: 1px solid lightgrey;
-      border-radius: 3px;
-      padding: 1em;
-      margin: 2em auto;
+    .large-img-details {
+      display: flex;
+      justify-content: space-between;
 
-      .large-img-details {
-        display: flex;
-        justify-content: space-between;
-
-        .large-img-offer {
-          border-radius: 50%;
-          background-color: $custgreen-bg-color;
-          height: 55px;
-          width: 55px;
-          color: #fff;
-        }
+      .large-img-offer {
+        border-radius: 50%;
+        background-color: $custgreen-bg-color;
+        height: 55px;
+        width: 55px;
+        color: #fff;
       }
     }
-
-    // .smaller-imgs-main {
-
-      .smaller-img {
-        position: relative;
-
-        .smaller-img-details {
-          position: absolute;
-          top: 10px;
-          left: 10px;
-          min-height: 40px;
-          min-width: 30px;
-
-          p:first-child {
-            margin-bottom: 0;
-          }
-        }
-      }
-
-      .smaller-img:first-child {
-        margin-bottom: 20px;
-      }
-    // }
   }
+
+  .smaller-img {
+    position: relative;
+    
+    .smaller-img-details {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      min-height: 40px;
+      min-width: 30px;
+
+      p:first-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .smaller-img:first-child {
+    margin-bottom: 20px;
+  }
+
 }
+
 
 .shopping-cart-custom {
   color: $cust-wine;
