@@ -8,7 +8,7 @@ div.fixation-clearer {
 }
 
 main.product-bg {
-  position: relative;
+  position: relative !important;
   background-color: $custgreen-bg-color;
   min-height: 60px;
   width: 100%;
