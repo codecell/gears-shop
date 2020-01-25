@@ -65,12 +65,6 @@
   margin-right: 60px;
 }
 
-.flex-nucleus {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 main {
   z-index: -1;
   padding-right: 0;
@@ -95,6 +89,15 @@ main section.homepage {
   margin: 25px auto;
 }
 
+section.customer-testimonials header h3,
+section.customer-testimonials header p {
+  margin: 20px auto;
+}
+
+section.customer-testimonials header p {
+  font-size: 25px;
+}
+
 .carousel-header .custom-directions {
   color: grey;
   font-size: 20px;
@@ -115,6 +118,16 @@ main section.homepage {
   color: #fff;
 }
 
+.ware-buttons-div button {
+  min-width: 55px;
+  border-radius: 15px;
+}
+
+.product-pcs-btn-div button {
+  width: 55px;
+  border-radius: 12px;
+}
+
 .home-bg-img-holder .app-slogan p,
 .home-bg-img-holder .app-slogan button {
   margin-left: 50px;
@@ -124,6 +137,22 @@ main section.homepage {
   font-size: 25px;
   margin: 50px auto 0 50px;
   font-weight: 500;
+}
+
+.btn-latest-deals {
+  min-width: 125px;
+  height: 35px;
+  color: #fff;
+  background-color: #d8055a;
+  border: 2px solid rgba(204, 12, 89, 0.863);
+  border-radius: 20px;
+  font-size: 17px;
+  margin-left: 25%;
+}
+
+.btn-latest-deals:hover {
+  background-color: rgba(204, 12, 89, 0.863);
+  transition: background-color 0.4s;
 }
 
 .home-bg-img-holder .app-slogan .btn-latest-deals {
@@ -324,12 +353,6 @@ section.home-carousel {
   }
 }
 
-.flex-nucleus {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 section.customer-testimonials {
   background-color: #62c312;
   min-height: 350px;
@@ -343,15 +366,6 @@ section.customer-testimonials header {
   width: 65%;
   margin: 0 auto;
   color: #fff;
-}
-
-section.customer-testimonials header h3,
-section.customer-testimonials header p {
-  margin: 20px auto;
-}
-
-section.customer-testimonials header p {
-  font-size: 25px;
 }
 
 .customer-cards-container {
@@ -392,12 +406,6 @@ section.customer-testimonials header p {
   .testim-card:last-child {
     margin-top: 0 !important;
   }
-}
-
-.flex-nucleus {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 footer {
@@ -446,12 +454,6 @@ li {
   footer ul {
     justify-content: flex-start !important;
   }
-}
-
-.flex-nucleus {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 section.latest-deals-section {
@@ -514,22 +516,6 @@ aside .range-sign .green-line {
   font-size: 12px !important;
 }
 
-.btn-latest-deals {
-  min-width: 125px;
-  height: 35px;
-  color: #fff;
-  background-color: #d8055a;
-  border: 2px solid rgba(204, 12, 89, 0.863);
-  border-radius: 20px;
-  font-size: 17px;
-  margin-left: 25%;
-}
-
-.btn-latest-deals:hover {
-  background-color: rgba(204, 12, 89, 0.863);
-  transition: background-color 0.4s;
-}
-
 .wares-container {
   min-height: 500px;
   margin: 0 auto;
@@ -560,11 +546,6 @@ aside .range-sign .green-line {
   color: #d8055a;
 }
 
-.ware-buttons-div button {
-  min-width: 55px;
-  border-radius: 15px;
-}
-
 .ware-buttons-div button:first-child {
   border: 1px solid #62c312;
 }
@@ -578,17 +559,6 @@ aside .range-sign .green-line {
   .wares-container {
     min-height: 100px;
   }
-}
-
-.flex-nucleus {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-div.fixation-clearer {
-  padding-right: 0;
-  background-color: #62c312 !important;
 }
 
 main.product-bg {
@@ -696,11 +666,6 @@ main.product-bg {
   color: #d8055a;
 }
 
-.product-pcs-btn-div button {
-  width: 55px;
-  border-radius: 12px;
-}
-
 .product-pcs-btn-div button:first-child {
   border: 1px solid #62c312;
 }
@@ -759,11 +724,4 @@ body {
   margin-right: 0;
   padding-right: 0;
   max-width: 1310px;
-}
-
-div.fixation-clearer {
-  width: 100%;
-  padding: 3em;
-  background-color: #62c312;
-  margin: 0 20px !important;
 }
