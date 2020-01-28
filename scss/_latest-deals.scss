@@ -7,9 +7,12 @@ section.latest-deals-section {
   padding-top: 1em;
 }
 
-div.fixation-clearer {
+div.fixation-clearer-lat-d {
+  position: relative;
   padding-right: 0;
   background-color: #fff !important;
+  width: 100%;
+  padding: 3em;
 }
 
 aside {
@@ -122,7 +125,6 @@ aside {
 
 @media screen and (min-width: 1024px) {
   aside {
-    // max-width: 250px;
     margin-left: 0 !important;
     margin-right: 20px !important;
   }

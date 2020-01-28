@@ -1,9 +1,18 @@
 @import './utils';
 
+.fixation-clearer-home {
+  position: relative;
+  padding-right: 0;
+  width: 100%;
+  padding: 3em;
+  background-color: #62c312;
+}
+
 main {
   z-index: -1;
   padding-right: 0;
   width: 100%;
+  position: relative;
 
   section.homepage {
     width: 100%;
