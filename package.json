@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "stylelint": "npx stylelint /Users/hp/Desktop/microverse/gears-shop/css/-main-sections.css",
-    "stylelint-fix": "npx stylelint /Users/hp/Desktop/microverse/gears-shop/css/-main-sections.css --fix"
+    "stylelint": "npx stylelint /Users/hp/Desktop/microverse/gears-shop/css/index.css",
+    "stylelint-fix": "npx stylelint /Users/hp/Desktop/microverse/gears-shop/css/index.css --fix"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,9 @@
     "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2",
     "stylelint": "^13.0.0",
-    "stylelint-config-recommended": "^3.0.0"
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-recommended-scss": "^4.1.0",
+    "stylelint-scss": "^3.14.0"
   },
   "dependencies": {
     "bootstrap-icons": "^1.0.0-alpha2"

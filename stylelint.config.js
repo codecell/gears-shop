@@ -106,4 +106,9 @@ module.exports = {
     "value-list-comma-space-before": "never",
     "value-list-max-empty-lines": 0,
   },
+  "extends": "stylelint-config-recommended-scss",
+  "rules": {
+    "block-no-empty": null,
+    "unit-whitelist": ["em", "rem", "s", "%", "px", "fr"]
+  }
 }
