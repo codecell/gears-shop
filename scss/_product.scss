@@ -5,6 +5,7 @@ $custom-grey: rgb(82, 79, 79);
 div.fixation-clearer {
   padding-right: 0;
   background-color: $custgreen-bg-color !important;
+  position: relative;
 }
 
 main.product-bg {
@@ -13,7 +14,6 @@ main.product-bg {
   min-height: 60px;
   width: 100%;
   padding-top: 1em;
-  margin: 0 20px !important;
 }
 
 .prduct-canvass {
@@ -142,6 +142,10 @@ main.product-bg {
     background-color: rgba(204, 12, 89, 0.863);
     transition: background-color 0.4s;
   }
+}
+
+.custom-directions-pd {
+  font-size: 22px;
 }
 
 .related-deals {

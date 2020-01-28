@@ -8,10 +8,25 @@ main {
   section.homepage {
     width: 100%;
     background-color: $custgreen-bg-color;
-    height: 580px;
-    margin: 0 20px !important;
+    min-height: 580px;
+    overflow: hidden;
   }
-} 
+}
+
+.mobile-body-nav {
+  text-align: center;
+
+  li {
+
+    &:hover {
+      min-height: 30px;
+      min-width: 100px;
+      background-color: $hover-bg;
+      margin-top: 0 !important;
+      transition: background-color 0.4s;
+    }
+  }
+}
 
 .carousel-header {
   display: flex;
@@ -24,32 +39,35 @@ main {
 
   .custom-directions {
     color: grey;
-    font-size: 20px;
+    font-size: 35px !important;
   }
 } 
 
 .home-bg-img-holder {
-  background-image: url('../images/watch-home.jpg');
-  width: 80%;
-  min-height: 170px !important;
-  background-repeat: no-repeat;
-  background-size: cover; 
-  margin: 0 auto;
-  background-position: 590px, -100px;
+  background-image: url('https://purepng.com/public/uploads/large/rolex-submariner-date-mpa.png');
+  min-width: 150px;
+  min-height: 100px !important;
+  background-repeat: no-repeat; 
+  background-position: 70%;
+  background-size: contain;
   
-
   .app-slogan {
     min-width: 25%;
     color: #fff;
+
+    p {
+      text-shadow: 0px 2px 2px #000;
+    }
 
     p, button {
       margin-left: 50px;
     }
 
-    p:first-child {
+    h1 {
       font-size: 25px;
       margin: 50px auto 0 50px;
       font-weight: 500;
+      text-shadow: 0px 2px 2px #000;
     }
 
     .btn-latest-deals {
@@ -60,8 +78,9 @@ main {
       border: 2px solid rgba(204, 12, 89, 0.863);
       border-radius: 20px;
       font-size: 17px;
-      margin-bottom: 100px;
-
+      margin: 17px auto 100px 50px !important;
+      text-align: center;
+     
       &:hover {
         background-color: rgba(204, 12, 89, 0.863);
         transition: background-color 0.4s;
@@ -76,13 +95,13 @@ section.home-carousel {
   background-color: $custgreen-bg-color;
   min-height: 450px;
   width: 100%;
-  margin: 0 20px !important;
 }
 
 .custom-badge {
   background-color: $cust-wine;
-  width: 140px;
+  max-width: 250px;
   border-radius: 14px;
+  text-align: center;
 }
 
 .home-carousel-main {
@@ -155,12 +174,11 @@ section.home-carousel {
 
     p, button {
       margin-left: 60px;
+      font-size: 20px;
     }
 
-    p:first-child {
-      font-size: 25px;
-      margin-bottom: 0;
-      font-weight: 500;
+    h1 {
+      font-size: 50px !important;
     }
   }
 

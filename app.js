@@ -3,6 +3,7 @@ const customerCareLink = document.getElementById('customerCareLink');
 
 customerCareLink.addEventListener('mouseover', () => {
   customerCareLine.classList.add('custom-badge');
+  customerCareLine.classList.add('text-nowrap');
 });
 
 if(customerCareLine.className = 'custom-bage') {

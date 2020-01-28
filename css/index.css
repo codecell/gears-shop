@@ -60,8 +60,17 @@ main {
   main section.homepage {
     width: 100%;
     background-color: #62C312;
-    height: 580px;
-    margin: 0 20px !important; }
+    min-height: 580px;
+    overflow: hidden; }
+
+.mobile-body-nav {
+  text-align: center; }
+  .mobile-body-nav li:hover {
+    min-height: 30px;
+    min-width: 100px;
+    background-color: rgba(81, 175, 5, 0.911);
+    margin-top: 0 !important;
+    transition: background-color 0.4s; }
 
 .carousel-header {
   display: flex;
@@ -71,25 +80,27 @@ main {
     margin: 25px auto; }
   .carousel-header .custom-directions {
     color: grey;
-    font-size: 20px; }
+    font-size: 35px !important; }
 
 .home-bg-img-holder {
-  background-image: url("../images/watch-home.jpg");
-  width: 80%;
-  min-height: 170px !important;
+  background-image: url("https://purepng.com/public/uploads/large/rolex-submariner-date-mpa.png");
+  min-width: 150px;
+  min-height: 100px !important;
   background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0 auto;
-  background-position: 590px, -100px; }
+  background-position: 70%;
+  background-size: contain; }
   .home-bg-img-holder .app-slogan {
     min-width: 25%;
     color: #fff; }
+    .home-bg-img-holder .app-slogan p {
+      text-shadow: 0px 2px 2px #000; }
     .home-bg-img-holder .app-slogan p, .home-bg-img-holder .app-slogan button {
       margin-left: 50px; }
-    .home-bg-img-holder .app-slogan p:first-child {
+    .home-bg-img-holder .app-slogan h1 {
       font-size: 25px;
       margin: 50px auto 0 50px;
-      font-weight: 500; }
+      font-weight: 500;
+      text-shadow: 0px 2px 2px #000; }
     .home-bg-img-holder .app-slogan .btn-latest-deals {
       width: 200px;
       height: 35px;
@@ -98,7 +109,8 @@ main {
       border: 2px solid rgba(204, 12, 89, 0.863);
       border-radius: 20px;
       font-size: 17px;
-      margin-bottom: 100px; }
+      margin: 17px auto 100px 50px !important;
+      text-align: center; }
       .home-bg-img-holder .app-slogan .btn-latest-deals:hover {
         background-color: rgba(204, 12, 89, 0.863);
         transition: background-color 0.4s; }
@@ -107,13 +119,13 @@ section.home-carousel {
   padding-top: 3em;
   background-color: #62C312;
   min-height: 450px;
-  width: 100%;
-  margin: 0 20px !important; }
+  width: 100%; }
 
 .custom-badge {
   background-color: #D8055A;
-  width: 140px;
-  border-radius: 14px; }
+  max-width: 250px;
+  border-radius: 14px;
+  text-align: center; }
 
 .home-carousel-main {
   width: 80%;
@@ -162,11 +174,10 @@ section.home-carousel {
     width: 25%;
     color: #fff; }
     .app-slogan p, .app-slogan button {
-      margin-left: 60px; }
-    .app-slogan p:first-child {
-      font-size: 25px;
-      margin-bottom: 0;
-      font-weight: 500; }
+      margin-left: 60px;
+      font-size: 20px; }
+    .app-slogan h1 {
+      font-size: 50px !important; }
   .home-bg-img {
     min-height: 400px !important; }
   section.home-carousel {
@@ -236,8 +247,7 @@ section.customer-testimonials {
   min-height: 350px;
   padding-bottom: 2em;
   padding-top: 2em;
-  width: 100%;
-  margin: 0 20px !important; }
+  width: 100%; }
   section.customer-testimonials header {
     width: 65%;
     margin: 0 auto;
@@ -284,7 +294,6 @@ footer {
   background-color: rgba(81, 175, 5, 0.911);
   width: 100%;
   min-height: 120px !important;
-  margin: 0 20px !important;
   padding-top: 1em;
   padding-bottom: 0.5em; }
   footer ul {
@@ -323,8 +332,7 @@ section.latest-deals-section {
   background-color: #62C312;
   min-height: 60px;
   width: 100%;
-  padding-top: 1em;
-  margin: 0 20px !important; }
+  padding-top: 1em; }
 
 div.fixation-clearer {
   padding-right: 0;
@@ -402,11 +410,13 @@ aside {
     left: 10px;
     color: #D8055A; }
 
-.ware-buttons-div button {
-  min-width: 55px;
-  border-radius: 15px; }
+.ware-buttons-div span {
+  min-width: 65px;
+  height: 40px;
+  border-radius: 7px;
+  padding: 2px; }
 
-.ware-buttons-div button:first-child {
+.ware-buttons-div span:first-child {
   border: 1px solid #62C312; }
 
 @media screen and (min-width: 1024px) {
@@ -423,15 +433,15 @@ aside {
 
 div.fixation-clearer {
   padding-right: 0;
-  background-color: #62C312 !important; }
+  background-color: #62C312 !important;
+  position: relative; }
 
 main.product-bg {
   position: relative !important;
   background-color: #62C312;
   min-height: 60px;
   width: 100%;
-  padding-top: 1em;
-  margin: 0 20px !important; }
+  padding-top: 1em; }
 
 .prduct-canvass {
   background-color: #fff;
@@ -526,6 +536,9 @@ main.product-bg {
     background-color: rgba(204, 12, 89, 0.863);
     transition: background-color 0.4s; }
 
+.custom-directions-pd {
+  font-size: 22px; }
+
 .related-deals {
   width: 80%;
   margin: 0 auto; }
@@ -544,18 +557,13 @@ main.product-bg {
   padding: 0;
   box-sizing: border-box; }
 
-body {
-  max-width: 1310px; }
-
 .container-fluid, .row {
   margin-left: 0;
   padding-left: 0;
   margin-right: 0;
-  padding-right: 0;
-  max-width: 1310px; }
+  padding-right: 0; }
 
 div.fixation-clearer {
   width: 100%;
   padding: 3em;
-  background-color: #62C312;
-  margin: 0 20px !important; }
+  background-color: #62C312; }

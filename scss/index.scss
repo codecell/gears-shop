@@ -13,22 +13,16 @@
   box-sizing: border-box;
 }
 
-body {
-  max-width: 1310px;
-}
-
 .container-fluid, .row {
   margin-left: 0;
   padding-left: 0;
   margin-right:  0;
   padding-right: 0;
-  max-width: 1310px;
 }
 
 div.fixation-clearer {
   width: 100%;
   padding: 3em;
   background-color: $custgreen-bg-color;
-  margin: 0 20px !important;
 }
 

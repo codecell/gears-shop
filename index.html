@@ -18,9 +18,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
   <link rel="manifest" href="./favicon/site.webmanifest">
-  <!-- Font Awesome -->
-  <script src="https://use.fontawesome.com/fde342f3c0.js">
-  </script>
 </head>
 <body>
   <header class="container-fluid">
@@ -32,7 +29,7 @@
           </a>
         </div>      
 
-        <div class="d-lg-flex collapse nav-routes" id="navbarSupportedContent">
+        <div class="d-none d-sm-none d-md-none d-lg-flex nav-routes">
           <ul class="navbar-nav">
             <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -73,10 +70,8 @@
         </div>
 
         <button class="navbar-toggler text-light d-sm-flex d-md-flex d-lg-none outline-0"
-          type="button" data-toggle="collapse" 
-          data-target="#navbarSupportedContent" 
-          aria-controls="navbarSupportedContent" 
-          aria-expanded="false" aria-label="Toggle navigation">
+          type="button"  
+        >
             <i class="fa fa-bars"></i>
         </button>
     </nav>
@@ -85,12 +80,29 @@
   <div class="fixation-clearer"></div>
   <main class="container-fluid">
     <section class="homepage">
+      <ul class="d-xs-block d-sm-block d-lg-none mobile-body-nav text-light pt-3 text-nowrap">
+        <li class="d-inline-block mr-2"><a class="text-light text-decoration-none" href="./html/latest-deals.html">Latest Deals</a></li>
+        <li class="d-inline-block mr-2"><a href="#"></a> Customer Care</li>
+        <li class="dropdown d-inline-block mr-2">
+          <a class="nav-link dropdown-toggle text-light text-decoration-none" href="#" id="navbarDropdown-2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Categories
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Men's Shoes</a>
+            <a class="dropdown-item" href="#">Men's Gears</a>
+            <a class="dropdown-item" href="#">Women's Shoes</a>
+            <a class="dropdown-item" href="#">Women's Gears</a>
+          </div>
+        </li>
+      </ul>
       <div class="home-bg-img-holder row">
-        <div class="app-slogan col-sm-12 col-md-5 col-lg-5">
-          <p>THE ELITE GEARS STORE</p>
+        <div class="app-slogan col-xs-12 col-sm-12 col-md-5 col-lg-7">
+          <h1 class="text-nowrap">THE ELITE GEARS STORE</h1>
           <p>100% money back guarantee</p>
           
-          <button class="btn-latest-deals"><a class="text-light text-decoration-none" href="./html/latest-deals.html">Latest deals</a></button>
+          <a class="btn-latest-deals d-block text-light text-decoration-none m-0" href="./html/latest-deals.html">
+            Latest Deals
+          </a>
 
           <p class="text-nowrap" id="customerCareLine">+234-654-864-545</p>
         </div>
@@ -101,7 +113,9 @@
       <div class="home-carousel-main pb-3">
         <div class="carousel-header">
           <h3>Top Deals</h3>
-          <p><span class="custom-directions">< ></span></p>
+          <p>
+            <ion-icon class="custom-directions" name="code"></ion-icon>
+          </p>
         </div>
 
         <div class="carousel-imgs-main">
@@ -141,7 +155,7 @@
     <section class="customer-testimonials pt-2">
       <header class="d-flex justify-content-between">
         <h3>CUSTOMER TESTIMONIALS</h3>
-        <p><span class="custom-directions text-nowrap">< ></span></p>
+        <p><ion-icon class="custom-directions" name="code"></ion-icon></p>
       </header>
 
       <div class="customer-cards-container d-md-flex d-lg-flex">
@@ -225,6 +239,13 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
   </script>
+
+  <!-- Font Awesome -->
+  <script src="https://use.fontawesome.com/fde342f3c0.js">
+  </script>
+
+  <!-- ION ICONS -->
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
   <script src="./app.js"></script>
 </body>
