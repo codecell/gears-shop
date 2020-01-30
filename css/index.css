@@ -141,7 +141,7 @@ section.home-carousel {
   background-color: #fff; }
   .home-carousel-main .large-img {
     background-image: url("https://purepng.com/public/uploads/large/three-iwatch-xjm.png");
-    background-position: bottom right; }
+    background-position: bottom center; }
   .home-carousel-main .large-img, .home-carousel-main .smaller-img {
     background-repeat: no-repeat;
     background-size: contain;
@@ -674,8 +674,7 @@ div.fixation-clearer-prod {
   width: 100%;
   height: 100%; }
 
-#motw {
-  height: 450px;
+.map {
   width: 100%; }
 
 .map-section-foot {
