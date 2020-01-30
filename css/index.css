@@ -48,11 +48,6 @@
 .cart-div-notif-container {
   margin-right: 60px; }
 
-.flex-nucleus {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
 .fixation-clearer-home {
   position: relative;
   width: 100%;
@@ -69,6 +64,8 @@ main {
     background-color: #62C312;
     min-height: 580px;
     overflow: hidden; }
+    li {
+      list-style: none; }   
 
 .mobile-body-nav {
   text-align: center; }
@@ -94,14 +91,28 @@ main {
   min-width: 150px;
   min-height: 100px !important;
   background-repeat: no-repeat;
-  background-position: 70%;
   background-size: contain;
-  background-position: bottom right; }
+  background-position: 70%; }
   .home-bg-img-holder .app-slogan {
     min-width: 25%;
     color: #fff; }
+    .map-section-foot-3rd-dv h6, .map-section-foot-3rd-dv p {
+      text-decoration: underline; }
+
+    section.customer-testimonials header {
+      width: 65%;
+      margin: 0 auto;
+      color: #fff; }
+      section.customer-testimonials header h3, section.customer-testimonials header p {
+        margin: 20px auto; }
+      section.customer-testimonials header p {
+        font-size: 25px; }
+      
     .home-bg-img-holder .app-slogan p {
       text-shadow: 0px 2px 2px #000; }
+      .product-pcs-btn-div button {
+        width: 55px;
+        border-radius: 12px; }
     .home-bg-img-holder .app-slogan p, .home-bg-img-holder .app-slogan button {
       margin-left: 50px; }
     .home-bg-img-holder .app-slogan h1 {
@@ -109,6 +120,20 @@ main {
       margin: 50px auto 0 50px;
       font-weight: 500;
       text-shadow: 0px 2px 2px #000; }
+
+      .btn-latest-deals {
+        min-width: 125px;
+        height: 35px;
+        color: #fff;
+        background-color: #D8055A;
+        border: 2px solid rgba(204, 12, 89, 0.863);
+        border-radius: 20px;
+        font-size: 17px;
+        margin-left: 25%; }
+
+    .btn-latest-deals:hover {
+      background-color: rgba(204, 12, 89, 0.863);
+      transition: background-color 0.4s; }
     .home-bg-img-holder .app-slogan .btn-latest-deals {
       width: 200px;
       height: 35px;
@@ -119,6 +144,7 @@ main {
       font-size: 17px;
       margin: 17px auto 100px 50px !important;
       text-align: center; }
+    
       .home-bg-img-holder .app-slogan .btn-latest-deals:hover {
         background-color: rgba(204, 12, 89, 0.863);
         transition: background-color 0.4s; }
@@ -148,7 +174,6 @@ section.home-carousel {
     width: 90%;
     height: 200px;
     background-color: #fafafa;
-    background-repeat: no-repeat;
     border: 1px solid lightgrey;
     border-radius: 3px;
     padding: 0.5em;
@@ -246,25 +271,12 @@ section.home-carousel {
       .carousel-imgs-main .smaller-imgs-main .smaller-img:last-child {
         margin-top: 0 !important; } }
 
-.flex-nucleus {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
 section.customer-testimonials {
   background-color: #62C312;
   min-height: 350px;
   padding-bottom: 2em;
   padding-top: 2em;
   width: 100%; }
-  section.customer-testimonials header {
-    width: 65%;
-    margin: 0 auto;
-    color: #fff; }
-    section.customer-testimonials header h3, section.customer-testimonials header p {
-      margin: 20px auto; }
-    section.customer-testimonials header p {
-      font-size: 25px; }
 
 .customer-test-paginator {
   margin: 30px 220px 0px; }
@@ -311,11 +323,6 @@ section.customer-testimonials {
   .testim-card:last-child {
     margin-top: 0 !important; } }
 
-.flex-nucleus {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
 footer {
   background-color: rgba(81, 175, 5, 0.911);
   width: 100%;
@@ -329,9 +336,6 @@ footer {
     footer a:hover {
       color: #000;
       transition: color 0.5s; }
-
-li {
-  list-style: none; }
 
 .footer-icons-span {
   height: 41px;
@@ -348,11 +352,6 @@ li {
     margin-right: 40px; }
   footer ul {
     justify-content: flex-start !important; } }
-
-.flex-nucleus {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
 
 section.latest-deals-section {
   min-height: 60px;
@@ -400,19 +399,6 @@ aside {
 .fa-check {
   font-size: 12px !important; }
 
-.btn-latest-deals {
-  min-width: 125px;
-  height: 35px;
-  color: #fff;
-  background-color: #D8055A;
-  border: 2px solid rgba(204, 12, 89, 0.863);
-  border-radius: 20px;
-  font-size: 17px;
-  margin-left: 25%; }
-  .btn-latest-deals:hover {
-    background-color: rgba(204, 12, 89, 0.863);
-    transition: background-color 0.4s; }
-
 .wares-container {
   min-height: 500px;
   margin: 0 auto; }
@@ -453,11 +439,6 @@ aside {
     margin-right: 20px !important; }
   .wares-container {
     min-height: 100px; } }
-
-.flex-nucleus {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
 
 div.fixation-clearer-prod {
   padding: 3em;
@@ -540,9 +521,6 @@ div.fixation-clearer-prod {
 .heart-icon-2 {
   color: #D8055A; }
 
-.product-pcs-btn-div button {
-  width: 55px;
-  border-radius: 12px; }
   .product-pcs-btn-div button:first-child {
     border: 1px solid #62C312; }
 
@@ -623,11 +601,6 @@ div.fixation-clearer-prod {
   .product-bg {
     min-height: 800px; } }
 
-.flex-nucleus {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
 .more-stock {
   background-color: rgba(81, 175, 5, 0.911);
   width: 100%; }
@@ -697,9 +670,6 @@ div.fixation-clearer-prod {
 .email-icon {
   margin-top: 5px; }
 
-.map-section-foot-3rd-dv h6, .map-section-foot-3rd-dv p {
-  text-decoration: underline; }
-
 .map-sect-div-img {
   width: 50px;
   object-fit: cover; }
@@ -707,14 +677,8 @@ div.fixation-clearer-prod {
 @media screen and (min-width: 1023px) {
   .map-section-foot {
     grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
-    column-gap: 30px; }
-  .map-section-foot {
-    height: 170px; } }
-
-.flex-nucleus {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+    column-gap: 30px;
+    height: 170px; }
 
 .catalogue-canvas {
   min-height: 300px;
@@ -770,3 +734,4 @@ div.fixation-clearer {
   width: 100%;
   padding: 3em;
   background-color: #62C312; }
+}
