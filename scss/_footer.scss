@@ -1,0 +1,53 @@
+@import './utils';
+
+footer {
+  background-color: $hover-bg;
+  width: 100%;
+  min-height: 120px !important;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+
+  ul {
+    text-align: center;
+  }
+  
+  a {
+    color: #fff;
+    
+    &:hover {
+      color: #000;
+      transition: color 0.5s;
+    }
+  }
+}
+
+li {
+  list-style: none;
+}
+
+.footer-icons-span {
+  height: 41px;
+  width: 41px;
+  background-color: #555;
+  color: #fff;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+
+// <<<< FOOTER MEDIA QUERIRES
+@media screen and (min-width: 1024px) {
+  .footer-socials-main {
+    justify-content: flex-end !important;
+    margin-right: 40px;
+  }
+
+  footer {
+
+    ul {
+      justify-content: flex-start !important;
+    }
+  }
+}

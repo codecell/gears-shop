@@ -1,0 +1,228 @@
+@import './utils';
+
+$custom-grey: rgb(82, 79, 79);
+
+div.fixation-clearer-prod {
+  padding: 3em;
+  background-color: $custgreen-bg-color !important;
+  position: relative !important;
+}
+
+.product-bg {
+  background-color: $custgreen-bg-color;
+  min-height: 1700px;
+  width: 100%;
+  padding-top: 1em;
+}
+
+.product-canvass, .related-deals-canvas {
+  background-color: #fff;
+  width: 80%;
+  min-height: 400px;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+.main-product-section {
+  min-width: 80%;
+  height: 200px;
+  margin: 0 auto;
+  display: grid;
+  grid-auto-flow: row;
+  grid-auto-rows: 1fr 1fr;
+  border-radius: 3px;
+}
+
+.product-img-div {
+  background: url('https://purepng.com/public/uploads/large/rolex-cosmograph-daytona-oq6.png');
+  min-width: 60px;
+  min-height: 200px;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: contain;
+  background-position: center, center;
+
+  .pic-selector {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    color: grey;
+  }
+
+  .product-id {
+    color: $custom-grey;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .vert-info-1, .vert-info-2,
+  .vert-info-3 {
+    height: 9px;
+    width: 9px;
+  }
+
+  .vert-info-1 {
+    background-color: rgb(52, 105, 8);
+  }
+
+  .vert-info-2 {
+    background-color: #62C312;
+  }
+
+  .vert-info-3 {
+    background-color: rgb(114, 236, 14);
+  }
+
+  .img-offer {
+    height: 50px;
+    width: 50px;
+    background-color: $custgreen-bg-color;
+  }
+
+}
+
+.product-color-1, .product-color-2,
+.product-color-3, .product-color-4,
+.product-color-5 {
+  height: 20px;
+  width: 20px;
+}
+
+.product-color-1 {
+  background-color: tomato;
+}
+
+.product-color-2 {
+  background-color: rgb(228, 120, 101);
+}
+
+.product-color-3 {
+  background-color: #c0c0c0;
+}
+
+.product-color-4 {
+  background-color: rgb(104, 22, 7);
+}
+
+.heart-icon-2 {
+  color: $cust-wine;
+}
+
+.product-pcs-btn-div {
+
+  button {
+    width: 55px;
+    border-radius: 12px;
+
+    &:first-child {
+      border: 1px solid $custgreen-bg-color;
+    }
+  }
+
+}
+
+.old-price {
+  color: grey;
+  text-decoration: line-through;
+}
+
+.btn-add-cart {
+  width: 200px;
+  height: 35px;
+  color: #fff;
+  background-color: $cust-wine;
+  border: 2px solid rgba(204, 12, 89, 0.863);
+  border-radius: 20px;
+  font-size: 17px;
+  margin: 50px auto 50px 45px;
+
+  &:hover {
+    background-color: rgba(204, 12, 89, 0.863);
+    transition: background-color 0.4s;
+  }
+}
+
+.custom-directions-pd {
+  font-size: 22px;
+  color: grey;
+}
+
+.white-body {
+  background-color: #fff;
+  min-height: 1700px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+// RELATED DEALS
+.related-deals {
+  min-width: 80%;
+  margin: 0 auto;
+}
+
+.rel-deals-header {
+  color: #555;
+}
+
+.heart-icon-rel {
+  color: #D8055A;
+}
+
+.related-deals-canvas {
+  margin-top: 180px;
+  background-color: #fff;
+}
+
+.related-deals-holder {
+  height: 250px;
+  width: 98%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+  column-gap: 25px;
+}
+
+.rel-deal-img {
+  position: relative;
+  background: url('https://purepng.com/public/uploads/large/wrist-watch-ogx.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 200px;
+  width: 100%;
+}
+
+// <<< MEDIA QUERIES >>>>
+@media screen and (min-width: 1024px) {
+  .main-product-section {
+    margin: 0 auto;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .product-details {
+    padding-left: 50px !important;
+  }
+
+  // RELATED DEALS
+  .related-deals-canvas {
+    margin-top: 5px !important;
+  }
+
+  .related-deals-holder {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .white-body {
+    min-height: 800px;
+  }
+
+  .product-bg {
+    min-height: 800px;
+  }
+
+}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GEARS SHOP</title> 
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous"
+    >
+    <!-- custom styles -->
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/fde342f3c0.js">
+    </script>
+  </head>
+  <body>
+    <header class="container-fluid">
+      <nav class="navbar navbar-expand-lg d-flex justify-content-between">      
+          <div class="d-flex ml-4">
+            <a class="navbar-brand text-light" href="../index.html">
+              <i class="fa fa-anchor"></i>
+              <span class="ml-2 d-none d-lg-inline">Gearz shop</span>
+            </a>
+          </div>      
+  
+          <div class="d-lg-flex collapse nav-routes" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Latest Deals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="customerCareLink">Customer Care</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Categories
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Men's Shoes</a>
+                  <a class="dropdown-item" href="#">Men's Gears</a>
+                  <a class="dropdown-item" href="#">Women's Shoes</a>
+                  <a class="dropdown-item" href="#">Women's Gears</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="d-flex cart-div-notif-container">
+            <span class="rounded-circle nav-heart-circle border flex-nucleus">
+              <i class="fa fa-heart-o text-light"></i>
+            </span>
+            <div class="cart-div ml-3">
+              <span class="nav-cart-circle rounded-circle flex-nucleus">
+                <i class="fa fa-shopping-cart text-light"></i> 
+              </span>
+  
+              <span class="cart-notification rounded-circle border flex-nucleus">
+                <small>9</small>
+              </span>
+            </div>
+          </div>
+  
+          <button class="navbar-toggler text-light d-sm-flex d-md-flex d-lg-none outline-0"
+            type="button" data-toggle="collapse" 
+            data-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars"></i>
+          </button>
+      </nav>
+    </header>
+    
+    <div class="fixation-clearer-lat-d"></div>
+
+    <section class="container-fluid latest-deals-section">
+      <div class="main-canvass bg-light">
+        <h3 class="ml-5 pt-3 mb-3">LATEST DEALS</h3>
+
+        <div class="row wares-container">
+          <aside class="d-none d-lg-inline-block d-md-inline-block col-md-3 col-lg-3 border">
+            <h5 class="font-weight-bold ml-5 mt-2">FILTER</h5>
+
+            <div class="range-sign">
+              <span class="grey-line ml-2"></span>
+              <span class="green-line"></span>
+              <span class="grey-line"></span>
+            </div>
+
+            <form class="d-flex ml-5">
+              <input type="text" class="range-button mr-3 mt-3" placeholder="1999" />
+              <input type="text" class="range-button mb-3 mt-3" placeholder="19990" />
+            </form>
+
+            <h5 class="font-weight-bold ml-5 mt-1">FILTER</h5>
+
+            <ul class="d-flex ml-5">
+              <li class="rounded-circle mr-2 filter-by-color-li bg-primary"></li>
+              <li class="rounded-circle mr-2 filter-by-color-li bg-danger"></li>
+              <li class="rounded-circle mr-2 filter-by-color-li bg-success flex-nucleus">
+                <i class="fa fa-check text-light"></i>
+              </li>
+              <li class="rounded-circle mr-2 filter-by-color-li bg-warning"></li>
+              <li class="rounded-circle mr-2 filter-by-color-li bg-secondary"></li>
+            </ul>
+
+            <h5 class="font-weight-bold ml-5 mt-1">Groups</h5>
+
+            <ul class="ml-5">
+              <li>
+                <input type="checkbox"> <a href="#" class="text-dark">Lorem</a>
+              </li>
+              <li>
+                <input type="checkbox"> <a href="#" class="text-dark">Ipsum</a>
+              </li>
+              <li>
+                <input type="checkbox" checked> <a href="#" class="text-dark">Amet</a>
+              </li>
+              <li>
+                <input type="checkbox"> <a href="#" class="text-dark">Consect</a>
+              </li>
+              <li>
+                <input type="checkbox"> <a href="#" class="text-dark">Sita</a>
+              </li>
+            </ul>
+
+            <h5 class="font-weight-bold ml-5 mt-1">Desireables</h5>
+
+            <ul class="ml-5 mb-3">
+              <li>
+                <input type="checkbox"> <a href="#" class="text-dark">Lorem</a>
+              </li>
+              <li>
+                <input type="checkbox"> <a href="#" class="text-dark">Ipsum</a>
+              </li>
+              <li>
+                <input type="checkbox"> <a href="#" class="text-dark">Amet</a>
+              </li>
+              <li>
+                <input type="checkbox"> <a href="#" class="text-dark">Consect</a>
+              </li>
+              <li>
+                <input type="checkbox"> <a href="#" class="text-dark">Sita</a>
+              </li>
+            </ul>
+
+            <button class="btn-latest-deals">Request</button>
+          </aside>
+          <div class="col-lg-8 col-md-8 row">
+            <a href="./product.html" class="text-decoration-none text-dark mr-4">
+              <div class="col-lg-4 col-md-6 col-sm-9 ware-unit border mb-3">
+                <div class="ware-img">
+                  <i class="fa fa-heart-o heart-icon"></i>
+                </div>
+  
+                <div class="mt-2">
+                  <h5>Spec name</h5>
+                  <div class="mt-3 mb-3 ware-buttons-div">
+                    <span>15 pcs</span>
+                    <span class="border">9 pcs</span>
+                    <span class="border">5 pcs</span>
+                  </div>
+  
+                  <p>3940€ <i class="fa fa-shopping-cart shopping-cart-custom ml-2"></i></p>
+                </div>
+              </div>
+            </a>
+
+            <a href="./product.html" class="text-decoration-none text-dark mr-4">
+              <div class="col-lg-4 col-md-6 col-sm-9 ware-unit border">
+                <div class="ware-img">
+                  <i class="fa fa-heart-o heart-icon"></i>
+                </div>
+  
+                <div class="mt-2">
+                  <h5>Spec name</h5>
+                  <div class="mt-3 mb-3 ware-buttons-div">
+                    <span>15 pcs</span>
+                    <span class="border">9 pcs</span>
+                    <span class="border">5 pcs</span>
+                  </div>
+  
+                  <p>3940€ <i class="fa fa-shopping-cart shopping-cart-custom ml-2"></i></p>
+                </div>
+              </div>
+            </a>
+
+            <a href="./product.html" class="text-decoration-none text-dark mr-4">
+              <div class="col-lg-4 col-md-6 col-sm-9 ware-unit border">
+                <div class="ware-img">
+                  <i class="fa fa-heart-o heart-icon"></i>
+                </div>
+  
+                <div class="mt-2">
+                  <h5>Spec name</h5>
+                  <div class="mt-3 mb-3 ware-buttons-div">
+                    <span>15 pcs</span>
+                    <span class="border">9 pcs</span>
+                    <span class="border">5 pcs</span>
+                  </div>
+  
+                  <p>3940€ <i class="fa fa-shopping-cart shopping-cart-custom ml-2"></i></p>
+                </div>
+              </div>
+            </a>
+
+            <a href="./product.html" class="text-decoration-none text-dark mr-4">
+              <div class="col-lg-4 col-md-6 col-sm-9 ware-unit border">
+                <div class="ware-img">
+                  <i class="fa fa-heart-o heart-icon"></i>
+                </div>
+  
+                <div class="mt-2">
+                  <h5>Spec name</h5>
+                  <div class="mt-3 mb-3 ware-buttons-div">
+                    <span>15 pcs</span>
+                    <span class="border">9 pcs</span>
+                    <span class="border">5 pcs</span>
+                  </div>
+  
+                  <p>3940€ <i class="fa fa-shopping-cart shopping-cart-custom ml-2"></i></p>
+                </div>
+              </div>
+            </a>
+
+            <a href="./product.html" class="text-decoration-none text-dark mr-4">
+              <div class="col-lg-4 col-md-6 col-sm-9 ware-unit border">
+                <div class="ware-img">
+                  <i class="fa fa-heart-o heart-icon"></i>
+                </div>
+  
+                <div class="mt-2">
+                  <h5>Spec name</h5>
+                  <div class="mt-3 mb-3 ware-buttons-div">
+                    <span>15 pcs</span>
+                    <span class="border">9 pcs</span>
+                    <span class="border">5 pcs</span>
+                  </div>
+  
+                  <p>3940€ <i class="fa fa-shopping-cart shopping-cart-custom ml-2"></i></p>
+                </div>
+              </div>
+            </a>
+
+            <a href="./product.html" class="text-decoration-none text-dark mr-4">
+              <div class="col-lg-4 col-md-6 col-sm-9 ware-unit border">
+                <div class="ware-img">
+                  <i class="fa fa-heart-o heart-icon"></i>
+                </div>
+  
+                <div class="mt-2">
+                  <h5>Spec name</h5>
+                  <div class="mt-3 mb-3 ware-buttons-div">
+                    <span>15 pcs</span>
+                    <span class="border">9 pcs</span>
+                    <span class="border">5 pcs</span>
+                  </div>
+  
+                  <p>3940€ <i class="fa fa-shopping-cart shopping-cart-custom ml-2"></i></p>
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <!-- Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <!-- Bootstrap Js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+  </body>
+</html>

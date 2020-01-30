@@ -1,0 +1,197 @@
+.flex-nucleus {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.fixation-clearer-home {
+  position: relative;
+  width: 100%;
+  padding: 3em;
+  background-color: #62c312; }
+
+main {
+  z-index: -1;
+  padding-right: 0;
+  width: 100%;
+  position: relative; }
+  main section.homepage {
+    width: 100%;
+    background-color: #62C312;
+    min-height: 580px;
+    overflow: hidden; }
+
+.mobile-body-nav {
+  text-align: center; }
+  .mobile-body-nav li:hover {
+    min-height: 30px;
+    min-width: 100px;
+    background-color: rgba(81, 175, 5, 0.911);
+    margin-top: 0 !important;
+    transition: background-color 0.4s; }
+
+.carousel-header {
+  display: flex; }
+  .carousel-header h3, .carousel-header p {
+    color: #555;
+    margin: 25px auto;
+    display: inline-block; }
+  .carousel-header .custom-directions {
+    color: grey;
+    font-size: 35px !important; }
+
+.home-bg-img-holder {
+  background-image: url("https://purepng.com/public/uploads/large/rolex-submariner-date-mpa.png");
+  min-width: 150px;
+  min-height: 100px !important;
+  background-repeat: no-repeat;
+  background-position: 70%;
+  background-size: contain;
+  background-position: bottom right; }
+  .home-bg-img-holder .app-slogan {
+    min-width: 25%;
+    color: #fff; }
+    .home-bg-img-holder .app-slogan p {
+      text-shadow: 0px 2px 2px #000; }
+    .home-bg-img-holder .app-slogan p, .home-bg-img-holder .app-slogan button {
+      margin-left: 50px; }
+    .home-bg-img-holder .app-slogan h1 {
+      font-size: 25px;
+      margin: 50px auto 0 50px;
+      font-weight: 500;
+      text-shadow: 0px 2px 2px #000; }
+    .home-bg-img-holder .app-slogan .btn-latest-deals {
+      width: 200px;
+      height: 35px;
+      color: #fff;
+      background-color: #D8055A;
+      border: 2px solid rgba(204, 12, 89, 0.863);
+      border-radius: 20px;
+      font-size: 17px;
+      margin: 17px auto 100px 50px !important;
+      text-align: center; }
+      .home-bg-img-holder .app-slogan .btn-latest-deals:hover {
+        background-color: rgba(204, 12, 89, 0.863);
+        transition: background-color 0.4s; }
+
+section.home-carousel {
+  padding-top: 3em;
+  background-color: #62C312;
+  min-height: 450px;
+  width: 100%; }
+
+.custom-badge {
+  background-color: #D8055A;
+  max-width: 250px;
+  border-radius: 14px;
+  text-align: center; }
+
+.home-carousel-main {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff; }
+  .home-carousel-main .large-img {
+    background-image: url("https://purepng.com/public/uploads/large/three-iwatch-xjm.png");
+    background-position: bottom center; }
+  .home-carousel-main .large-img, .home-carousel-main .smaller-img {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 90%;
+    height: 200px;
+    background-color: #fafafa;
+    background-repeat: no-repeat;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    padding: 0.5em;
+    margin: 2em auto; }
+    .home-carousel-main .large-img .large-img-details, .home-carousel-main .smaller-img .large-img-details {
+      display: flex;
+      justify-content: space-between; }
+      .home-carousel-main .large-img .large-img-details .large-img-offer, .home-carousel-main .smaller-img .large-img-details .large-img-offer {
+        border-radius: 50%;
+        background-color: #62C312;
+        height: 55px;
+        width: 55px;
+        color: #fff; }
+  .home-carousel-main .smaller-img {
+    background-image: url("https://purepng.com/public/uploads/large/apple-watch-pcq.png");
+    background-position: bottom center;
+    position: relative; }
+    .home-carousel-main .smaller-img .smaller-img-details {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      min-height: 40px;
+      min-width: 30px; }
+      .home-carousel-main .smaller-img .smaller-img-details p:first-child {
+        margin-bottom: 0; }
+  .home-carousel-main .smaller-img:first-child {
+    margin-bottom: 20px; }
+
+.shopping-cart-custom {
+  color: #D8055A;
+  font-size: 21px; }
+
+@media screen and (min-width: 668px) {
+  .app-slogan {
+    margin-top: 90px !important;
+    width: 25%;
+    color: #fff; }
+    .app-slogan p, .app-slogan button {
+      margin-left: 60px; }
+    .app-slogan p:first-child {
+      font-size: 25px;
+      margin-bottom: 0;
+      font-weight: 500; }
+  .home-bg-img {
+    margin-top: 50px !important;
+    height: 400px !important; } }
+
+@media screen and (min-width: 1024px) {
+  .app-slogan {
+    margin-top: 90px !important;
+    width: 25%;
+    color: #fff; }
+    .app-slogan p, .app-slogan button {
+      margin-left: 60px;
+      font-size: 20px; }
+    .app-slogan h1 {
+      font-size: 50px !important; }
+  .home-bg-img {
+    min-height: 400px !important; }
+  section.home-carousel {
+    padding-top: 0 !important; }
+  .carousel-header p {
+    margin-right: 90px !important; }
+  .carousel-header h3 {
+    margin-left: 90px !important; }
+  .carousel-imgs-main {
+    display: flex;
+    margin-left: 4em;
+    margin-right: 4em; }
+    .carousel-imgs-main .large-img, .carousel-imgs-main .smaller-imgs-main {
+      width: 45%;
+      height: 400px !important;
+      border-radius: 3px;
+      padding: 1em;
+      margin: 2em auto; }
+    .carousel-imgs-main .smaller-imgs-main {
+      padding: 0 !important;
+      border: none;
+      background-color: #fff;
+      margin-left: 2em;
+      margin-top: 0; }
+      .carousel-imgs-main .smaller-imgs-main .smaller-img {
+        height: 191px;
+        width: 100%;
+        border: 1px solid lightgrey;
+        border-radius: 3px; }
+        .carousel-imgs-main .smaller-imgs-main .smaller-img .smaller-img-details {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          min-height: 40px;
+          min-width: 30px; }
+          .carousel-imgs-main .smaller-imgs-main .smaller-img .smaller-img-details p:first-child {
+            margin-bottom: 0; }
+      .carousel-imgs-main .smaller-imgs-main .smaller-img:last-child {
+        margin-top: 0 !important; } }

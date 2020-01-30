@@ -1,0 +1,33 @@
+{
+  "name": "gears-shop",
+  "version": "1.0.0",
+  "description": "\"# gears-shop\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "stylelint": "npx stylelint /Users/hp/Desktop/microverse/gears-shop/css/index.css",
+    "stylelint-fix": "npx stylelint /Users/hp/Desktop/microverse/gears-shop/css/index.css --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codecell/gears-shop.git"
+  },
+  "author": "Ezaka Alfred N. (codecell)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codecell/gears-shop/issues"
+  },
+  "homepage": "https://github.com/codecell/gears-shop#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "stylelint": "^13.0.0",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-recommended-scss": "^4.1.0",
+    "stylelint-scss": "^3.14.0"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.0.0-alpha2"
+  }
+}

@@ -1,0 +1,135 @@
+@import './utils';
+
+section.latest-deals-section {
+  min-height: 60px;
+  width: 100%;
+  padding-top: 1em;
+}
+
+div.fixation-clearer-lat-d {
+  position: relative;
+  background-color: #fff !important;
+  width: 100%;
+  padding: 3em;
+}
+
+aside {
+  background-color: #efefef;
+  min-height: 500px;
+  min-width: 200px;
+  border-radius: 6px;
+
+  .range-sign {
+    display: flex;
+    width: 80%;
+    min-height: 3px;
+    margin: 0 auto;
+    
+    .grey-line {
+      width: 35px;
+      height: 4px;
+      background-color: lightgrey;
+    }
+
+    .green-line {
+      width: 50px;
+      height: 4px;
+      background-color: $custgreen-bg-color;
+    }
+  }
+}
+
+.range-button {
+  width: 50px;
+  height: 35px;
+  background-color: #fff;
+  border: 1px solid $custgreen-bg-color;
+  border-radius: 3px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.filter-by-color-li {
+  width: 20px;
+  height: 20px;
+}
+
+.fa-check {
+  font-size: 12px !important;
+}
+
+.btn-latest-deals {
+  min-width: 125px;
+  height: 35px;
+  color: #fff;
+  background-color: $cust-wine;
+  border: 2px solid rgba(204, 12, 89, 0.863);
+  border-radius: 20px;
+  font-size: 17px;
+  margin-left: 25%;
+
+  &:hover {
+    background-color: rgba(204, 12, 89, 0.863);
+    transition: background-color 0.4s;
+  }
+}
+
+.wares-container {
+  min-height: 500px;
+  margin: 0 auto;
+
+  .ware-unit {
+    height: 290px;
+    max-width: 240px;
+    background-color: #efefef;
+    border-radius: 6px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+  }
+}
+
+
+.ware-img {
+  background: url('https://purepng.com/public/uploads/large/purepng.com-watch-goldenclothingwatch-goldenfashion-watch-time-6315223271199pcei.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 150px;
+  width: 100%;
+  position: relative;
+  background-position: bottom right;
+
+  .heart-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: $cust-wine;
+  }
+}
+
+.ware-buttons-div {
+
+  span {
+    min-width: 65px;
+    height: 40px;
+    border-radius: 7px;
+    padding: 2px;
+  }
+
+  span:first-child {
+    border: 1px solid $custgreen-bg-color;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  aside {
+    margin-left: 0 !important;
+    margin-right: 20px !important;
+  }
+
+  .wares-container {
+    min-height: 100px;
+  }
+
+}

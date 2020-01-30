@@ -1,0 +1,31 @@
+@import './utils';
+@import './navbar';
+@import './-main-sections.scss';
+@import './customer-testims';
+@import './footer';
+@import './latest-deals';
+@import './product';
+@import './more-stock';
+@import './map-section';
+@import './-catalogue.scss';
+
+// <<<< BASIC RESETS >>>>>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-fluid, .row {
+  margin-left: 0;
+  padding-left: 0;
+  margin-right:  0;
+  padding-right: 0;
+}
+
+div.fixation-clearer {
+  width: 100%;
+  padding: 3em;
+  background-color: $custgreen-bg-color;
+}
+
