@@ -7,7 +7,7 @@ Gears shop is a Microverse Capstone project to demonstrate pure mastery of HTML/
 ![image](https://user-images.githubusercontent.com/46686100/73234951-9f2d6280-418c-11ea-99bc-463bd73f0bb1.png)
 
 ## Live Demo 
- Hosted [here](https://rawcdn.githack.com/codecell/gears-shop/cfa49f9a8facf48c55bcd9f3ea2564525406fa73/index.html) with love from [Githack](https:raw.githack.com).
+ Hosted [here](https://rawcdn.githack.com/codecell/gears-shop/5e8342ff46eacc00586d475a77916a822fe14df3/index.html) with love from [Githack](https:raw.githack.com).
 
 ## Getting Started
 
