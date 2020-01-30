@@ -38,11 +38,11 @@ main {
 
 .carousel-header {
   display: flex;
-  justify-content: space-between;
-  
+    
   h3, p {
     color: #555;
     margin: 25px auto;
+    display: inline-block;
   }
 
   .custom-directions {
@@ -58,6 +58,7 @@ main {
   background-repeat: no-repeat; 
   background-position: 70%;
   background-size: contain;
+  background-position: bottom right;
   
   .app-slogan {
     min-width: 25%;
@@ -113,21 +114,26 @@ section.home-carousel {
 }
 
 .home-carousel-main {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   background-color: #fff; 
 
+  .large-img {
+    background-image: url('https://purepng.com/public/uploads/large/three-iwatch-xjm.png');
+    background-position: bottom right;
+  }
+  
   .large-img, .smaller-img{
-    width: 70%;
-    height: 220px;
-    background-image: url('../images/watch.jpg') !important;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    width: 90%;
+    height: 200px;
+    background-color: #fafafa;
+    background-repeat: no-repeat;
     border: 1px solid lightgrey;
     border-radius: 3px;
-    padding: 1em;
+    padding: 0.5em;
     margin: 2em auto;
-    background-position: 0px, -100px;
 
     .large-img-details {
       display: flex;
@@ -144,6 +150,8 @@ section.home-carousel {
   }
 
   .smaller-img {
+    background-image: url('https://purepng.com/public/uploads/large/apple-watch-pcq.png');
+    background-position: bottom center;
     position: relative;
     
     .smaller-img-details {
@@ -171,8 +179,33 @@ section.home-carousel {
   font-size: 21px;
 }
 
-// <<< media queries >>>
+// <<< tablet >>>
+@media screen and (min-width: 668px) {
 
+  .app-slogan {
+    margin-top: 90px !important;
+    width: 25%;
+    color: #fff;
+
+    p, button {
+      margin-left: 60px;
+    }
+
+    p:first-child {
+      font-size: 25px;
+      margin-bottom: 0;
+      font-weight: 500;
+    }
+  }
+
+  .home-bg-img {
+    margin-top: 50px !important;
+    height: 400px !important;
+  }
+
+}
+
+// <<< media queries >>>
 @media screen and (min-width: 1024px) {
 
   .app-slogan {
@@ -199,6 +232,16 @@ section.home-carousel {
     padding-top: 0 !important;
   }
 
+  .carousel-header {
+    p {
+      margin-right: 90px !important;
+    }
+
+    h3 {
+      margin-left: 90px !important;
+    }
+  }
+
   .carousel-imgs-main {
     display: flex ;
     margin-left: 4em;
@@ -206,17 +249,10 @@ section.home-carousel {
 
     .large-img, .smaller-imgs-main {
       width: 45%;
-      height: 320px !important;
-      background-color: #efefef;
-      border: 1px solid lightgrey;
+      height: 400px !important;
       border-radius: 3px;
       padding: 1em;
       margin: 2em auto;
-
-      .large-img-details {
-        display: flex;
-        justify-content: space-between;
-      }
     }
 
     .smaller-imgs-main {
@@ -227,10 +263,7 @@ section.home-carousel {
       margin-top: 0;
 
       .smaller-img {
-        position: relative;
-        background-color: #efefef;
-        height: 150px;
-        padding: 1em;
+        height: 191px;
         width: 100%;
         border: 1px solid lightgrey;
         border-radius: 3px;
@@ -254,30 +287,4 @@ section.home-carousel {
       }
     }
   }
-}
-
-// <<< tablet >>>
-@media screen and (min-width: 668px) {
-
-  .app-slogan {
-    margin-top: 90px !important;
-    width: 25%;
-    color: #fff;
-
-    p, button {
-      margin-left: 60px;
-    }
-
-    p:first-child {
-      font-size: 25px;
-      margin-bottom: 0;
-      font-weight: 500;
-    }
-  }
-
-  .home-bg-img {
-    margin-top: 50px !important;
-    height: 400px !important;
-  }
-
 }

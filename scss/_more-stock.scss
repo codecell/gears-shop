@@ -1,0 +1,55 @@
+@import './utils';
+
+.more-stock {
+  background-color: $hover-bg;
+  width: 100%;
+}
+
+.more-stock-cont {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.more-stock-imgs-section {
+  height: 600px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+}
+
+.more-stocks-header {
+  color: #efefef;
+  padding-top: 40px !important;
+  margin-bottom: 25px;
+}
+
+.more-s-img-1, .more-s-img-2,
+.more-s-img-3 {
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: #ecebeb;
+}
+
+.more-s-img-1 {
+  background-image: url('https://purepng.com/public/uploads/large/fitbit-tracker-b9v.png');
+}
+
+.more-s-img-2 {
+  background-image: url('https://purepng.com/public/uploads/large/watch-in-wrist-qas.png');
+}
+
+.more-s-img-3 {
+  background-image: url('https://purepng.com/public/uploads/large/pocket-watch-zs9.png');
+}
+
+
+@media screen and (min-width: 1023px) {
+  .more-stock-imgs-section {
+    grid-template-columns: 1.5fr 1.2fr 0.9fr;
+    column-gap: 25px;
+    height: 220px;
+  }
+}
+

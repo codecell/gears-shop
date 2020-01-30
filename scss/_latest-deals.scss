@@ -1,7 +1,6 @@
 @import './utils';
 
 section.latest-deals-section {
-  background-color: $custgreen-bg-color;
   min-height: 60px;
   width: 100%;
   padding-top: 1em;
@@ -93,12 +92,13 @@ aside {
 
 
 .ware-img {
-  background: url('../images/watch-2.jpg');
+  background: url('https://purepng.com/public/uploads/large/purepng.com-watch-goldenclothingwatch-goldenfashion-watch-time-6315223271199pcei.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 150px;
   width: 100%;
   position: relative;
+  background-position: bottom right;
 
   .heart-icon {
     position: absolute;

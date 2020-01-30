@@ -2,46 +2,45 @@
 
 $custom-grey: rgb(82, 79, 79);
 
-div.fixation-clearer {
-  padding-right: 0;
+div.fixation-clearer-prod {
+  padding: 3em;
   background-color: $custgreen-bg-color !important;
-  position: relative;
+  position: relative !important;
 }
 
-main.product-bg {
-  position: relative !important;
+.product-bg {
   background-color: $custgreen-bg-color;
-  min-height: 60px;
+  min-height: 1700px;
   width: 100%;
   padding-top: 1em;
 }
 
-.prduct-canvass {
+.product-canvass, .related-deals-canvas {
   background-color: #fff;
   width: 80%;
-  min-height: 500px;
+  min-height: 400px;
   margin: 0 auto;
-  border-radius: 6px;
+  border-radius: 3px;
 }
 
 .main-product-section {
-  min-width: 90%;
-  min-height: 400px;
+  min-width: 80%;
+  height: 200px;
   margin: 0 auto;
   display: grid;
   grid-auto-flow: row;
   grid-auto-rows: 1fr 1fr;
-  border-radius: 6px;
+  border-radius: 3px;
 }
 
 .product-img-div {
-  background: url('../images/watch.jpg');
+  background: url('https://purepng.com/public/uploads/large/rolex-cosmograph-daytona-oq6.png');
   min-width: 60px;
-  min-height: 60px;
+  min-height: 200px;
   background-repeat: no-repeat;
   position: relative;
-  background-size: cover;
-  background-position: 0, -400px;
+  background-size: contain;
+  background-position: center, center;
 
   .pic-selector {
     position: absolute;
@@ -136,7 +135,7 @@ main.product-bg {
   border: 2px solid rgba(204, 12, 89, 0.863);
   border-radius: 20px;
   font-size: 17px;
-  margin-bottom: 100px;
+  margin: 50px auto 50px 45px;
 
   &:hover {
     background-color: rgba(204, 12, 89, 0.863);
@@ -146,21 +145,84 @@ main.product-bg {
 
 .custom-directions-pd {
   font-size: 22px;
+  color: grey;
 }
 
-.related-deals {
+.white-body {
+  background-color: #fff;
+  min-height: 1700px;
   width: 80%;
   margin: 0 auto;
+}
+
+// RELATED DEALS
+.related-deals {
+  min-width: 80%;
+  margin: 0 auto;
+}
+
+.rel-deals-header {
+  color: #555;
+}
+
+.heart-icon-rel {
+  color: #D8055A;
+}
+
+.related-deals-canvas {
+  margin-top: 180px;
+  background-color: #fff;
+}
+
+.related-deals-holder {
+  height: 250px;
+  width: 98%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+  column-gap: 25px;
+}
+
+.rel-deal-img {
+  position: relative;
+  background: url('https://purepng.com/public/uploads/large/wrist-watch-ogx.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 200px;
+  width: 100%;
 }
 
 // <<< MEDIA QUERIES >>>>
 @media screen and (min-width: 1024px) {
   .main-product-section {
-    width: 80%;
-    height: 400px;
     margin: 0 auto;
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 1fr 1fr;
   }
+
+  .product-details {
+    padding-left: 50px !important;
+  }
+
+  // RELATED DEALS
+  .related-deals-canvas {
+    margin-top: 5px !important;
+  }
+
+  .related-deals-holder {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .white-body {
+    min-height: 800px;
+  }
+
+  .product-bg {
+    min-height: 800px;
+  }
+
 }

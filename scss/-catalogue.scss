@@ -1,0 +1,51 @@
+@import './utils';
+
+.catalogue-canvas {
+  min-height: 300px;
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 30px;
+}
+
+.catalogue-header {
+  width: 80%;
+  margin:30px auto;
+  color: #555;
+}
+
+.catalogue-img-dv {
+  border-radius: 4px;
+}
+
+.btn-catalogue {
+  width: 200px;
+  height: 35px;
+  color: #fff;
+  background-color: $cust-wine;
+  border: 2px solid $cust-wine;
+  border-radius: 20px;
+  font-size: 17px;
+  text-align: center;
+  
+  &:hover {
+    background-color: rgba(204, 12, 89, 0.863);
+    transition: background-color 0.4s;
+  }
+}
+
+@media screen and (min-width: 667px) {
+  .catalogue-canvas {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+  }
+}
+
+
+@media screen and (min-width: 1023px) {
+  .catalogue-canvas {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+  }
+}
